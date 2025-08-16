@@ -33,22 +33,28 @@
 
 ## 📦 Project Structure
 Hybrid-Automation-Framework/
-├─ pom.xml
-├─ README.md
-├─ src
-│ ├─ main
-│ │ ├─ java
-│ │ │ ├─ framework
-│ │ │ │ ├─ core/ # DriverManager, GridFactory, BaseTest
-│ │ │ │ ├─ utils/ # Waits, Config, TestData, Logger
-│ │ │ └─ pages/ # Page Objects (LoginPage, HomePage, etc.)
-│ │ └─ resources
-│ │ ├─ config.properties # baseUrl, browser, gridUrl, timeouts...
-│ │ └─ log4j2.xml # logging
-│ └─ test
-│ ├─ java
-│ │ └─ tests # TestNG tests (organized by feature)
-│ └─ resources
-│ └─ testng.xml # Suite definition (parallel/groups)
-└─ docker
-└─ grid-compose.yml # Selenium Grid (hub + nodes)
+├── .gitignore
+├── pom.xml
+├── README.md
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── framework
+│   │   │       ├── core
+│   │   │       │   ├── DriverFactory.java
+│   │   │       │   └── BaseTest.java
+│   │   │       ├── pages
+│   │   │       │   └── LoginPage.java
+│   │   │       └── utils
+│   │   │           └── ConfigReader.java
+│   │   └── resources
+│   │       ├── config.properties
+│   │       └── log4j2.xml
+│   └── test
+│       ├── java
+│       │   └── tests
+│       │       └── LoginTest.java
+│       └── resources
+│           └── testng.xml
+└── docker
+    └── grid-compose.yml
