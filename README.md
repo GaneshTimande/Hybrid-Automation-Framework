@@ -32,4 +32,23 @@
 ---
 
 ## 📦 Project Structure
-
+Hybrid-Automation-Framework/
+├─ pom.xml
+├─ README.md
+├─ src
+│ ├─ main
+│ │ ├─ java
+│ │ │ ├─ framework
+│ │ │ │ ├─ core/ # DriverManager, GridFactory, BaseTest
+│ │ │ │ ├─ utils/ # Waits, Config, TestData, Logger
+│ │ │ └─ pages/ # Page Objects (LoginPage, HomePage, etc.)
+│ │ └─ resources
+│ │ ├─ config.properties # baseUrl, browser, gridUrl, timeouts...
+│ │ └─ log4j2.xml # logging
+│ └─ test
+│ ├─ java
+│ │ └─ tests # TestNG tests (organized by feature)
+│ └─ resources
+│ └─ testng.xml # Suite definition (parallel/groups)
+└─ docker
+└─ grid-compose.yml # Selenium Grid (hub + nodes)
