@@ -1,5 +1,5 @@
 
-FinalHybridFramework - Complete Selenium Grid POM framework
+HybridFramework - Complete Selenium Grid POM framework
 
 How to run:
 1. Extract this project and open in Eclipse (Import -> Maven -> Existing Maven Projects).
