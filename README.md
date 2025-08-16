@@ -53,3 +53,54 @@ Hybrid-Automation-Framework
 │
 └── docker
     └── grid-compose.yml
+
+
+2️⃣ Install dependencies
+mvn clean install
+
+3️⃣ Configure properties
+
+Update src/main/resources/config.properties with your browser, grid URL, and application details.
+
+▶️ Execution
+
+🔹 Run with Maven
+
+mvn test
+
+
+🔹 Run with TestNG Suite
+
+mvn clean test -DsuiteXmlFile=src/test/resources/testng.xml
+
+
+🔹 Run on Selenium Grid (Docker)
+
+docker-compose -f docker/grid-compose.yml up -d
+mvn test -DseleniumGrid=true
+
+📊 Reports
+
+Test Execution Reports → test-output/
+
+Extent Reports → reports/extent-report.html
+
+📸 Demo Screenshot (Optional)
+
+Add a screenshot here if needed
+
+🧑‍💻 Author
+
+👤 Ganesh Timande
+🔗 GitHub | LinkedIn
+
+
+---
+
+4. Save the file.  
+5. Commit and push to GitHub:  
+
+```bash
+git add README.md
+git commit -m "Added setup, execution, and report details to README"
+git push origin master
