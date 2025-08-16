@@ -32,10 +32,12 @@
 ---
 
 ## 📦 Project Structure
-Hybrid-Automation-Framework/
+Hybrid-Automation-Framework
+│
 ├── .gitignore
 ├── pom.xml
 ├── README.md
+│
 ├── src
 │   ├── main
 │   │   ├── java
@@ -43,18 +45,24 @@ Hybrid-Automation-Framework/
 │   │   │       ├── core
 │   │   │       │   ├── DriverFactory.java
 │   │   │       │   └── BaseTest.java
+│   │   │       │
 │   │   │       ├── pages
 │   │   │       │   └── LoginPage.java
+│   │   │       │
 │   │   │       └── utils
 │   │   │           └── ConfigReader.java
+│   │   │
 │   │   └── resources
 │   │       ├── config.properties
 │   │       └── log4j2.xml
+│   │
 │   └── test
 │       ├── java
 │       │   └── tests
 │       │       └── LoginTest.java
+│       │
 │       └── resources
 │           └── testng.xml
+│
 └── docker
     └── grid-compose.yml
